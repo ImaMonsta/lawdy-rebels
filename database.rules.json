@@ -1,0 +1,18 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": false,
+    "rooms": {
+      "$room": {
+        "questions": {
+          "$question": {
+            ".write": "auth != null",
+            "status": {
+              ".validate": "newData.val() === 'open' || auth.uid === data.parent().parent().parent().child('owner').val()"
+            }
+          }
+        }
+      }
+    }
+  }
+}

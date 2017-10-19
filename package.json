@@ -1,0 +1,26 @@
+{
+  "name": "lawdy-rebels",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^4.5.2",
+    "material-ui": "^1.0.0-beta.17",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "moment": "^2.19.1",
+    "re-base": "^3.0.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "firebase": "node_modules/.bin/firebase"
+  },
+  "devDependencies": {
+    "firebase-tools": "^3.13.1"
+  }
+}
