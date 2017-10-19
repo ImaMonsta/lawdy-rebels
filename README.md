@@ -1,5 +1,5 @@
 [![Workspace](https://codenvy.io/factory/resources/codenvy-contribute.svg)](https://codenvy.io/f?id=factorylfp5x815zvjt4r3g)
-# :imp: lawdy-rebels IGQ [![Build Status](https://travis-ci.org/ImaMonsta/bawdy-rebels.svg?branch=master)](https://travis-ci.org/ImaMonsta/bawdy-rebels)
+# :imp: lawdy-rebels IGQ [![Build Status](https://travis-ci.org/ImaMonsta/lawdy-rebels.svg?branch=master)](https://travis-ci.org/ImaMonsta/lawdy-rebels)
 This app use [Firebase](https://firebase.google.com/) so you will definitely will need a Firebase Account with Google, the CI is configured with [Travis](https://travis-ci.org) you will also need an account for that.
 
 ### Requirements
