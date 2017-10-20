@@ -72,7 +72,7 @@ class Home extends Component {
             state: "room",
         });
         this.setState({currentRoom: room});
-        this.context.router.history.push(`/${room}`);
+        
         
     }
 

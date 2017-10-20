@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ListItemText, ListItemSecondaryAction, Badge, ListItem, Avatar, IconButton } from 'material-ui';
-import { ThumbUp as ThumbUpIcon, ThumbDown as ThumbDownIcon, Delete as DeleteIcon } from 'material-ui-icons';
+import { ThumbUp as ThumbUpIcon, ThumbDown as ThumbDownIcon, Clear as ClearIcon } from 'material-ui-icons';
 import moment from 'moment';
 
 class Question extends Component {
@@ -32,13 +32,13 @@ class Question extends Component {
             <div>
                 <ListItem>
                 <Avatar alt="user" src={this.props.details.photo}/>
-                <ListItemText primary={this.props.details.question} secondary={`${moment(this.props.details.when).calendar()}`} />
+                <ListItemText primary={this.props.details.question.text} secondary={`${moment(this.props.details.when).calendar()}`} />
                 <ListItemSecondaryAction>
                     <Badge  badgeContent={votesCount} color="accent" onClick={this.vote}>
                         {icon}
                     </Badge>
                     <IconButton aria-label="Delete" onClick={this.close}>
-                        <DeleteIcon />
+                        <ClearIcon />
                     </IconButton>
                 </ListItemSecondaryAction>
                 </ListItem>

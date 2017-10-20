@@ -21,7 +21,9 @@ class Ask extends Component {
         if(this.state.questionValue === "") return;
         
         const question = {
-            question: this.state.questionValue,
+            question: {
+                 text: this.state.questionValue,
+                },
             status: "open",
             author: this.props.user.email,
             when: Date.now(),
