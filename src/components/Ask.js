@@ -38,7 +38,7 @@ class Ask extends Component {
 
     render() {
         return (
-            <form ref={(input) => this.questionForm = input} noValidate autoComplete="off" style={{margin: 5}}>
+            <form ref={(input) => this.questionForm = input} noValidate autoComplete="off" style={{margin: 5}} onSubmit={this.ask}>
                 <TextField
                     id="full-width"
                     label="What's your question?"
@@ -47,11 +47,11 @@ class Ask extends Component {
                     }}
                     placeholder="Ask!"
                     margin="normal"
-                    style={{width:'70%'}}
+                    style={{width:'60%'}}
                     value={this.state.questionValue}
                     onChange={this.handleChange('questionValue')}
                     />
-                <Button raised color="primary"  style={{marginLeft:30}} onClick={this.ask}>
+                <Button raised color="primary"  style={{marginLeft:30}} type="submit" >
                     Ask
                 </Button>
             </form>
