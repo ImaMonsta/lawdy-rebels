@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import { RouteConfig } from './settings/RouteConfig';
 import firebase from 'firebase'
+import {colors} from 'material-ui';
 
 const theme = createMuiTheme({
     palette: {
-      type: 'light', // Switching the dark mode on is a single property value change.
+        type: 'dark',
+        primary: colors.grey,
+        secondary: colors.teal,
     },
   });
 

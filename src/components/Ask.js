@@ -51,7 +51,7 @@ class Ask extends Component {
                     value={this.state.questionValue}
                     onChange={this.handleChange('questionValue')}
                     />
-                <Button raised color="primary"  style={{marginLeft:30}} type="submit" >
+                <Button raised color="primary"  style={{marginLeft:30, background: 'linear-gradient(to right, #00c9ff, #92fe9d)'}} type="submit" >
                     Ask
                 </Button>
             </form>

@@ -27,7 +27,7 @@ class Question extends Component {
         const votesCount = votes.length;
         let icon =null;
         if(this.props.user)
-            icon = votes.find(key => this.props.user.uid === key) ? <ThumbDownIcon style={{margin: `0 8px`,}} /> : <ThumbUpIcon style={{margin: `0 8px`,}} /> 
+            icon = votes.find(key => this.props.user.uid === key) ? <ThumbDownIcon color="accent" style={{margin: `0 8px`,}} /> : <ThumbUpIcon style={{margin: `0 8px`,}} /> 
         return (
             <div>
                 <ListItem>
