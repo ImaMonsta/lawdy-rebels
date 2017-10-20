@@ -32,7 +32,7 @@ class Question extends Component {
             <div>
                 <ListItem>
                 <Avatar alt="user" src={this.props.details.photo}/>
-                <ListItemText primary={this.props.details.question.text} secondary={`${moment(this.props.details.when).calendar()}`} />
+                <ListItemText primary={this.props.details.question.text} secondary={`${this.props.details.author} on ${moment(this.props.details.when).calendar()}`} />
                 <ListItemSecondaryAction>
                     <Badge  badgeContent={votesCount} color="accent" onClick={this.vote}>
                         {icon}
